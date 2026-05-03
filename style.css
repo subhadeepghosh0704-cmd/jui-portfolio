@@ -1,43 +1,78 @@
-/* IMAGE FIX */
-.p-img {
-    width: 100%;
-    height: auto;
-    display: block;
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background: #0f0f0f;
+    color: white;
 }
 
-/* GRID RESPONSIVE */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/* NAV */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: #111;
+}
+
+.nav ul {
+    display: flex;
     gap: 20px;
 }
 
-/* MOBILE FIX */
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 32px;
-    }
+.nav ul li {
+    list-style: none;
+}
 
-    .section-title {
-        font-size: 24px;
-    }
+.nav a {
+    color: white;
+    text-decoration: none;
+}
 
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
 
-    .nav-links {
-        display: none;
-    }
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* SECTION */
+.section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.grid img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+/* PROFILE */
+.profile {
+    width: 150px;
+    border-radius: 50%;
 }
 
 /* POPUP */
-.modal {
+#popup {
     display: none;
     position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.9);
@@ -45,17 +80,29 @@
     align-items: center;
 }
 
-.modal img {
+#popup img {
     max-width: 90%;
     max-height: 90%;
-    border-radius: 10px;
 }
 
-.close-btn {
+/* MOBILE */
+@media(max-width:768px){
+
+.nav ul {
+    display: none;
+    flex-direction: column;
+    background: #111;
     position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+}
+
+.nav ul.active {
+    display: flex;
+}
+
+.hamburger {
+    display: block;
+}
 }

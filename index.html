@@ -1,166 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jui Ghosh | Portfolio - Graphic Design</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jui Ghosh | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="cursor-dot"></div>
-<div class="cursor-outline"></div>
+<!-- NAVBAR -->
+<nav class="nav">
+    <h2>JUI.</h2>
 
-<nav class="glass-nav">
-    <a href="#hero" class="logo">JUI.</a>
-    <ul class="nav-links">
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <ul id="menu">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills & Edu</a></li>
-        <li><a href="#portfolio">Logofolio & Works</a></li>
-        <li><a href="#contact" class="nav-btn">Work With Me</a></li>
+        <li><a href="#portfolio">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
-<div class="glow-orb orb-1"></div>
-<div class="glow-orb orb-2"></div>
-
-<header id="hero" class="hero">
-    <div class="container hero-content">
-        <p class="hero-subtitle reveal-up">Graphic Designer</p>
-        <h1 class="hero-title reveal-up delay-1">JUI GHOSH</h1>
-        <p class="hero-desc reveal-up delay-2">I craft designs that not only look beautiful but also communicate clearly and effectively.</p>
-        <div class="reveal-up delay-3">
-            <a href="#portfolio" class="btn-primary">Explore My Work <span class="arrow">↓</span></a>
-        </div>
-    </div>
+<!-- HERO -->
+<header class="hero">
+    <h1>JUI GHOSH</h1>
+    <p>Graphic Designer</p>
 </header>
 
-<div class="marquee-wrapper">
-    <div class="marquee">
-        <span>LOGOFOLIO • SOCIAL MEDIA POSTERS • FLYERS • BRANDING • PRINT MATERIALS •</span>
-        <span>LOGOFOLIO • SOCIAL MEDIA POSTERS • FLYERS • BRANDING • PRINT MATERIALS •</span>
-    </div>
+<!-- ABOUT -->
+<section id="about" class="section">
+    <img src="images/profile.jpg.jpeg" class="profile">
+    <h2>Hello! I'm Jui</h2>
+    <p>Creative graphic designer passionate about branding, posters & UI design.</p>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="section">
+
+<h2>My Works</h2>
+
+<div class="grid">
+
+<!-- LOGOS -->
+<img src="images/logo1.jpg.jpeg" onclick="openImage(this)">
+<img src="images/logo2.jpg.jpeg" onclick="openImage(this)">
+<img src="images/logo3.jpg.jpeg" onclick="openImage(this)">
+<img src="images/logo4.jpg.jpeg" onclick="openImage(this)">
+<img src="images/logo5.jpg.jpeg" onclick="openImage(this)">
+<img src="images/logo6.jpg.jpeg" onclick="openImage(this)">
+
+<!-- MOCKUP -->
+<img src="images/mockup1.jpg.jpeg" onclick="openImage(this)">
+<img src="images/mockup2.jpg.jpeg" onclick="openImage(this)">
+<img src="images/mockup3.jpg.jpeg" onclick="openImage(this)">
+<img src="images/mockup4.jpg.jpeg" onclick="openImage(this)">
+<img src="images/mockup5.jpg.jpeg" onclick="openImage(this)">
+
+<!-- POSTER -->
+<img src="images/poster1.jpg.jpeg" onclick="openImage(this)">
+<img src="images/poster2.jpg.jpeg" onclick="openImage(this)">
+<img src="images/poster3.jpg.jpeg" onclick="openImage(this)">
+<img src="images/poster4.jpg.jpeg" onclick="openImage(this)">
+<img src="images/poster5.jpg.jpeg" onclick="openImage(this)">
+<img src="images/poster6.jpg.jpeg" onclick="openImage(this)">
+<img src="images/poster7.jpg.jpeg" onclick="openImage(this)">
+<img src="images/poster8.jpg.jpeg" onclick="openImage(this)">
+
+<!-- UI -->
+<img src="images/uidesign1.jpg.jpeg" onclick="openImage(this)">
+<img src="images/uidesign2.jpg.jpeg" onclick="openImage(this)">
+<img src="images/uidesign3.jpg.jpeg" onclick="openImage(this)">
+
 </div>
-
-<section id="about" class="about container section-padding">
-    <div class="about-grid">
-        <div class="about-image-wrapper reveal-left">
-            <img src="images/profile.jpg.jpeg" alt="Jui Ghosh" class="about-img">
-            
-            <div class="experience-badge">
-                <h2><i class="location-icon">📍</i></h2>
-                <p style="font-size: 0.9rem;">India,<br>West Bengal</p>
-            </div>
-        </div>
-
-        <div class="about-text reveal-right">
-            <h2 class="section-title">Hello! <br>I'm <span class="text-gradient">Jui Ghosh</span></h2>
-            <p>A Passionate graphic designer with a sharp eye for detail...</p>
-            <p>Whether it's branding, digital content, print materials...</p>
-            <p>I believe great design is not just about aesthetics...</p>
-
-            <div class="skills-container" style="margin-top: 30px;">
-                <p style="width: 100%; font-family: 'Syne'; font-weight: 600; color: #fff;">Interests:</p>
-                <span class="skill-tag">Art</span>
-                <span class="skill-tag">Design</span>
-                <span class="skill-tag">Painting</span>
-                <span class="skill-tag">Mountain</span>
-                <span class="skill-tag">Music</span>
-            </div>
-        </div>
-    </div>
 </section>
 
-<section id="skills" class="container section-padding">
-    <div class="about-grid">
-        <div class="reveal-left">
-            <h2 class="section-title">Technical <span class="text-gradient">Skills</span></h2>
-            <div class="software-grid">
-                <div class="soft-box">Adobe Photoshop</div>
-                <div class="soft-box">Adobe Indesign</div>
-                <div class="soft-box">Adobe Illustrator</div>
-                <div class="soft-box">Corel DRAW</div>
-                <div class="soft-box">Figma</div>
-                <div class="soft-box">Premiere Pro</div>
-            </div>
-        </div>
-
-        <div class="reveal-right">
-            <h2 class="section-title">Education</h2>
-            <div class="edu-list">
-                <div class="edu-item"><h3>Graphic Design</h3></div>
-                <div class="edu-item"><h3>University of Barasat</h3></div>
-                <div class="edu-item"><h3>Higher Secondary</h3></div>
-                <div class="edu-item"><h3>Secondary</h3></div>
-            </div>
-        </div>
-    </div>
+<!-- CONTACT -->
+<section id="contact" class="section">
+<h2>Contact Me</h2>
+<p>Email: juig259@gmail.com</p>
+<p>Phone: 9907438505</p>
 </section>
 
-<section id="portfolio" class="portfolio container section-padding">
-    <div class="portfolio-header reveal-up">
-        <h2 class="section-title">Logofolio & <span class="text-gradient">Works</span></h2>
-    </div>
-
-    <div class="portfolio-grid">
-
-        <!-- LOGOS -->
-        <div class="portfolio-item"><div class="image-box"><img src="images/logo1.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/logo2.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/logo3.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/logo4.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/logo5.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/logo6.jpg.jpeg" class="p-img"></div></div>
-
-        <!-- MOCKUPS -->
-        <div class="portfolio-item"><div class="image-box"><img src="images/mockup1.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/mockup2.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/mockup3.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/mockup4.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/mockup5.jpg.jpeg" class="p-img"></div></div>
-
-        <!-- POSTERS -->
-        <div class="portfolio-item"><div class="image-box"><img src="images/poster1.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/poster2.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/poster3.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/poster4.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/poster5.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/poster6.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/poster7.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/poster8.jpg.jpeg" class="p-img"></div></div>
-
-        <!-- UI -->
-        <div class="portfolio-item"><div class="image-box"><img src="images/uidesign1.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/uidesign2.jpg.jpeg" class="p-img"></div></div>
-        <div class="portfolio-item"><div class="image-box"><img src="images/uidesign3.jpg.jpeg" class="p-img"></div></div>
-
-    </div>
-</section>
-
-<section id="contact" class="contact section-padding">
-        <div class="container contact-box reveal-up">
-            <h2 style="font-size: 4rem; margin-bottom: 10px;">Thank You, bye !</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 40px; color: #fff;">Don't forget to contact me. Hope to see you later.</p>
-            
-            <div class="contact-details" style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
-                <a href="mailto:juig259@gmail.com" class="btn-primary">✉️ juig259@gmail.com</a>
-                <a href="tel:9907438505" class="btn-primary">📞 9907438505</a>
-            </div>
-        </div>
-    </section>
-
-<!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <h2>JUI GHOSH.</h2>
-            <p>&copy; 2026 Graphic Designer. All Rights Reserved.</p>
-        </div>
-    </footer>
+<!-- POPUP -->
+<div id="popup" onclick="closeImage()">
+    <img id="popup-img">
+</div>
 
 <script src="script.js"></script>
 
